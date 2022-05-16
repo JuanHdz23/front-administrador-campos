@@ -1,6 +1,10 @@
-# AdministradorCampos
+# Administrador de Campos
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+
+## Init Project
+
+Run `npm install` with Node Version 16.14.0.
 
 ## Development server
 
