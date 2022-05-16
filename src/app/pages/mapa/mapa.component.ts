@@ -60,10 +60,10 @@ export class MapaComponent implements OnInit {
 
       const graph_polygon = new google.maps.Polygon({
         paths: coordinates,
-        strokeColor: "#FF0000",
+        strokeColor: "#42C0FB",
         strokeOpacity: 0.8,
         strokeWeight: 2,
-        fillColor: "#FF0000",
+        fillColor: "#42C0FB",
         fillOpacity: 0.35,
       });
 
