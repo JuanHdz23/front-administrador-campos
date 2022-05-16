@@ -1,0 +1,23 @@
+#map {
+    height: 500px;
+}
+
+.card {
+
+    overflow: hidden;
+    background: #E0E1E2;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.example-tab-icon {
+    margin-right: 8px;
+}
+
+.card-name {
+    font-size: 12px;
+}

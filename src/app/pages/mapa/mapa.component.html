@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-sm-12 col-xs-12 col-md-3"> 
+        <form [formGroup]="mapaForm" role="search">
+            <input class="form-control me-2" placeholder="Search..." aria-label="Search" formControlName="search" [(ngModel)]="searchText">
+        </form>
+
+        <div class="card mt-2">
+            <div class="card-header" (click)="addPolygon()">
+                <i class="fa fa-plus-circle fa-lg example-icon" style="color:#47d198" aria-hidden="true"></i>
+                <strong>&nbsp; New Field</strong> 
+            </div>
+        </div>
+        <div *ngFor="let client of info_client | search: searchText" class="card mt-2 mb-2">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-10" style="font-size: 1vw;">
+                            <i class="fa fa-map-marker fa-lg ml-2" style="color:#42C0FB"  aria-hidden="true"></i> &nbsp;
+                        
+                            <strong>{{ client.name }}</strong> <br> 
+                            &nbsp;&nbsp;&nbsp; {{ client.location }}
+                        
+                    </div>
+                    <div class="col-2" style="font-size: 1vw;">
+                        <button class="btn btn-light" style="float: right!important;" type="submit" (click)="deletePolygon( client )">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-xs-12 col-md-9"> 
+        <div id="map"></div>
+    </div>
+</div>
